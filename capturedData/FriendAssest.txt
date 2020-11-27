@@ -1,0 +1,536 @@
+POST https://ak-gs-localhost.hypergryph.com:8443/quest/getFriendAssistCharList HTTP/1.1
+uid:	50968260
+X-Unity-Version:	2017.4.39f1
+secret:	pnKGte/A86oo6rhS7WqN6gFIYWFdK9bj
+Content-Type:	application/json
+seqnum:	5
+User-Agent:	Dalvik/2.1.0 (Linux; U; Android 6.0.1; MuMu Build/V417IR)
+Host:	ak-gs-localhost.hypergryph.com:38023
+Connection:	Keep-Alive
+Accept-Encoding:	gzip
+Content-Length:	13
+{
+    "refresh": 0
+}
+
+
+{
+    "assistFriendCharList": [],
+    "assistNotFriendCharList": [
+        {
+            "assistChar": {
+                "charId": "char_102_texas",
+                "crisisRecord": {},
+                "evolvePhase": 1,
+                "favorPoint": 3943,
+                "level": 52,
+                "mainSkillLvl": 3,
+                "potentialRank": 3,
+                "skillIndex": 0,
+                "skills": [
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skcom_charge_cost[3]",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 1
+                    },
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skchr_texas_2",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 1
+                    }
+                ],
+                "skinId": "char_102_texas@winter#1"
+            },
+            "assistSlotIndex": 0,
+            "avatarId": "0",
+            "board": [
+                "URSUS",
+                "KJERAG",
+                "GLASGOW",
+                "RHODES",
+                "PENGUIN"
+            ],
+            "charCnt": 82,
+            "friendNumLimit": 25,
+            "furnCnt": 44,
+            "infoShare": 0,
+            "lastOnlineTime": 1588321474,
+            "level": 31,
+            "mainStageProgress": "main_05-01",
+            "medalBoard": {
+                "custom": null,
+                "template": null,
+                "type": "EMPTY"
+            },
+            "nickName": "百合式达瑟",
+            "nickNumber": "5419",
+            "registerTs": 1556920413,
+            "resume": "相关功能优化中，签名暂无法保存，请等待后续开放。（修改任务不受影响）",
+            "secretary": "char_179_cgbird",
+            "secretarySkinId": "char_179_cgbird@witch#1",
+            "serverName": "泰拉",
+            "team": {
+                "1": 4,
+                "11": 3,
+                "12": 1,
+                "13": 4,
+                "15": 1,
+                "19": 5,
+                "2": 5,
+                "3": 5,
+                "4": 3,
+                "5": 1,
+                "6": 5,
+                "8": 2,
+                "9": 3
+            },
+            "uid": "5096287"
+        },
+        {
+            "assistChar": {
+                "charId": "char_415_flint",
+                "crisisRecord": {},
+                "evolvePhase": 0,
+                "favorPoint": 684,
+                "level": 50,
+                "mainSkillLvl": 1,
+                "potentialRank": 0,
+                "skillIndex": 0,
+                "skills": [
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skchr_flint_1",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 1
+                    },
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skchr_flint_2",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 0
+                    }
+                ],
+                "skinId": "char_415_flint#1"
+            },
+            "assistSlotIndex": 0,
+            "avatarId": "0",
+            "board": [
+                "GLASGOW",
+                "URSUS",
+                "KJERAG",
+                "RHODES",
+                "RHINE"
+            ],
+            "charCnt": 83,
+            "friendNumLimit": 25,
+            "furnCnt": 22,
+            "infoShare": 0,
+            "lastOnlineTime": 1600078708,
+            "level": 31,
+            "mainStageProgress": "sub_02-05",
+            "medalBoard": {
+                "custom": null,
+                "template": null,
+                "type": "EMPTY"
+            },
+            "nickName": "Yc诮亢文淌",
+            "nickNumber": "2122",
+            "registerTs": 1557254804,
+            "resume": "相关功能优化中，签名暂无法保存，请等待后续开放。（修改任务不受影响）",
+            "secretary": "char_2014_nian",
+            "secretarySkinId": "char_2014_nian#1",
+            "serverName": "泰拉",
+            "team": {
+                "1": 4,
+                "11": 2,
+                "12": 1,
+                "13": 2,
+                "15": 1,
+                "19": 5,
+                "2": 5,
+                "3": 5,
+                "4": 2,
+                "5": 1,
+                "6": 5,
+                "8": 1,
+                "9": 1
+            },
+            "uid": "50965505"
+        },
+        {
+            "assistChar": {
+                "charId": "char_199_yak",
+                "crisisRecord": {},
+                "evolvePhase": 1,
+                "favorPoint": 4750,
+                "level": 35,
+                "mainSkillLvl": 4,
+                "potentialRank": 5,
+                "skillIndex": 0,
+                "skills": [
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skchr_yak_1",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 1
+                    },
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skchr_yak_2",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 1
+                    }
+                ],
+                "skinId": "char_199_yak#1"
+            },
+            "assistSlotIndex": 0,
+            "avatarId": "0",
+            "board": [
+                "RHINE",
+                "RHODES",
+                "KJERAG",
+                "URSUS"
+            ],
+            "charCnt": 75,
+            "friendNumLimit": 35,
+            "furnCnt": 37,
+            "infoShare": 1562942849,
+            "lastOnlineTime": 1604298958,
+            "level": 31,
+            "mainStageProgress": "main_05-01",
+            "medalBoard": {
+                "custom": null,
+                "template": null,
+                "type": "EMPTY"
+            },
+            "nickName": "ばか野郎",
+            "nickNumber": "1318",
+            "registerTs": 1558534031,
+            "resume": "相关功能优化中，签名暂无法保存，请等待后续开放。（修改任务不受影响）",
+            "secretary": "char_263_skadi",
+            "secretarySkinId": "char_263_skadi#1",
+            "serverName": "泰拉",
+            "team": {
+                "1": 4,
+                "10": 1,
+                "11": 1,
+                "13": 4,
+                "15": 1,
+                "19": 5,
+                "2": 5,
+                "3": 5,
+                "4": 2,
+                "5": 1,
+                "6": 3,
+                "8": 2,
+                "9": 1
+            },
+            "uid": "50965620"
+        },
+        {
+            "assistChar": {
+                "charId": "char_400_weedy",
+                "crisisRecord": {
+                    "rune_season_2_1": -1
+                },
+                "evolvePhase": 1,
+                "favorPoint": 1945,
+                "level": 66,
+                "mainSkillLvl": 5,
+                "potentialRank": 0,
+                "skillIndex": 1,
+                "skills": [
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skchr_weedy_1",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 1
+                    },
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skchr_weedy_2",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 1
+                    },
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skchr_weedy_3",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 0
+                    }
+                ],
+                "skinId": "char_400_weedy#1"
+            },
+            "assistSlotIndex": 1,
+            "avatarId": "0",
+            "board": [
+                "GLASGOW",
+                "URSUS",
+                "PENGUIN",
+                "RHODES"
+            ],
+            "charCnt": 83,
+            "friendNumLimit": 35,
+            "furnCnt": 32,
+            "infoShare": 1595813817,
+            "lastOnlineTime": 1595929010,
+            "level": 31,
+            "mainStageProgress": "main_04-07",
+            "medalBoard": {
+                "custom": null,
+                "template": null,
+                "type": "EMPTY"
+            },
+            "nickName": "再重名我打你哦",
+            "nickNumber": "1358",
+            "registerTs": 1584348868,
+            "resume": "相关功能优化中，签名暂无法保存，请等待后续开放。（修改任务不受影响）",
+            "secretary": "char_213_mostma",
+            "secretarySkinId": "char_213_mostma@epoque#5",
+            "serverName": "泰拉",
+            "team": {
+                "1": 4,
+                "11": 2,
+                "13": 3,
+                "15": 1,
+                "19": 5,
+                "2": 5,
+                "3": 5,
+                "4": 2,
+                "5": 2,
+                "6": 5,
+                "8": 2
+            },
+            "uid": "509706330"
+        },
+        {
+            "assistChar": {
+                "charId": "char_010_chen",
+                "evolvePhase": 1,
+                "favorPoint": 2979,
+                "level": 50,
+                "mainSkillLvl": 3,
+                "potentialRank": 1,
+                "skillIndex": 1,
+                "skills": [
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skchr_chen_1",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 1
+                    },
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skchr_chen_2",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 1
+                    },
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skchr_chen_3",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 0
+                    }
+                ],
+                "skinId": "char_010_chen#1"
+            },
+            "assistSlotIndex": 1,
+            "avatarId": "0",
+            "board": [
+                "GLASGOW",
+                "PENGUIN",
+                "BLACKSTEEL",
+                "KJERAG",
+                "RHODES"
+            ],
+            "charCnt": 75,
+            "friendNumLimit": 35,
+            "furnCnt": 52,
+            "infoShare": 1571549218,
+            "lastOnlineTime": 1571462784,
+            "level": 31,
+            "mainStageProgress": "main_05-01",
+            "nickName": "栾院天磊",
+            "nickNumber": "3979",
+            "registerTs": 1558925143,
+            "resume": "相关功能优化中，签名暂无法保存，请等待后续开放。（修改任务不受影响）",
+            "secretary": "char_172_svrash",
+            "secretarySkinId": "char_172_svrash#1",
+            "serverName": "泰拉",
+            "team": {
+                "1": 4,
+                "11": 2,
+                "12": 2,
+                "13": 4,
+                "19": 5,
+                "2": 5,
+                "3": 5,
+                "4": 3,
+                "5": 2,
+                "6": 4,
+                "8": 2,
+                "9": 1
+            },
+            "uid": "50977627"
+        },
+        {
+            "assistChar": {
+                "charId": "char_208_melan",
+                "crisisRecord": {},
+                "evolvePhase": 1,
+                "favorPoint": 5305,
+                "level": 55,
+                "mainSkillLvl": 4,
+                "potentialRank": 5,
+                "skillIndex": 0,
+                "skills": [
+                    {
+                        "completeUpgradeTime": -1,
+                        "skillId": "skcom_atk_up[1]",
+                        "specializeLevel": 0,
+                        "state": 0,
+                        "unlock": 1
+                    }
+                ],
+                "skinId": "char_208_melan#1"
+            },
+            "assistSlotIndex": 0,
+            "avatarId": "0",
+            "board": [
+                "KJERAG",
+                "RHODES",
+                "PENGUIN",
+                "BLACKSTEEL",
+                "URSUS"
+            ],
+            "charCnt": 92,
+            "friendNumLimit": 25,
+            "furnCnt": 32,
+            "infoShare": 0,
+            "lastOnlineTime": 1604852725,
+            "level": 31,
+            "mainStageProgress": "main_03-08",
+            "medalBoard": {
+                "custom": null,
+                "template": null,
+                "type": "EMPTY"
+            },
+            "nickName": "强壮的如天",
+            "nickNumber": "2918",
+            "registerTs": 1556796510,
+            "resume": "相关功能优化中，签名暂无法保存，请等待后续开放。（修改任务不受影响）",
+            "secretary": "char_222_bpipe",
+            "secretarySkinId": "char_222_bpipe#1",
+            "serverName": "泰拉",
+            "team": {
+                "1": 4,
+                "11": 3,
+                "13": 2,
+                "19": 5,
+                "2": 5,
+                "3": 5,
+                "4": 3,
+                "5": 1,
+                "6": 3,
+                "8": 2,
+                "9": 1
+            },
+            "uid": "50967226"
+        }
+    ],
+    "friendAliasList": [],
+    "playerDataDelta": {
+        "deleted": {},
+        "modified": {}
+    },
+    "refreshTimes": 10,
+    "result": 0
+}
+
+POST https://ak-gs-localhost.hypergryph.com:8443/quest/battleStart HTTP/1.1
+uid:	50968260
+X-Unity-Version:	2017.4.39f1
+secret:	pnKGte/A86oo6rhS7WqN6gFIYWFdK9bj
+Content-Type:	application/json
+seqnum:	6
+User-Agent:	Dalvik/2.1.0 (Linux; U; Android 6.0.1; MuMu Build/V417IR)
+Host:	ak-gs-localhost.hypergryph.com:38023
+Connection:	Keep-Alive
+Accept-Encoding:	gzip
+Content-Length:	738
+
+
+{
+    "assistFriend": {
+        "assistChar": {
+            "charId": "char_102_texas",
+            "crisisRecord": {},
+            "currentTmpl": null,
+            "evolvePhase": 0,
+            "favorPoint": 1184,
+            "level": 50,
+            "mainSkillLvl": 1,
+            "potentialRank": 3,
+            "skillIndex": 0,
+            "skills": [
+                {
+                    "skillId": "skcom_charge_cost[3]",
+                    "specializeLevel": 0
+                },
+                {
+                    "skillId": "skchr_texas_2",
+                    "specializeLevel": 0
+                }
+            ],
+            "skinId": "char_102_texas@winter#1",
+            "tmpl": null
+        },
+        "assistSlotIndex": 0,
+        "lastOnlineTime": 1588321474,
+        "level": 31,
+        "nickName": "百合式达瑟",
+        "nickNumber": "5419",
+        "recentVisited": 0,
+        "serverName": "泰拉",
+        "uid": "5096287"
+    },
+    "isReplay": 0,
+    "squad": {
+        "name": "第一编队",
+        "slots": [
+            {
+                "charInstId": 1,
+                "skillIndex": 0
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "squadId": "0"
+    },
+    "stageId": "main_00-01",
+    "startTs": 1606501359,
+    "usePracticeTicket": 0
+}

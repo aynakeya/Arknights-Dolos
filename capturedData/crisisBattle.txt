@@ -1,0 +1,48 @@
+POST https://ak-gs-localhost.hypergryph.com:8443/crisis/battleStart HTTP/1.1
+uid:	50968260
+X-Unity-Version:	2017.4.39f1
+secret:	pnKGte/A86oo6rhS7WqN6gEeWKTfhAmX
+Content-Type:	application/json
+seqnum:	5
+User-Agent:	Dalvik/2.1.0 (Linux; U; Android 6.0.1; MuMu Build/V417IR)
+Host:	ak-gs-localhost.hypergryph.com:38023
+Connection:	Keep-Alive
+Accept-Encoding:	gzip
+Content-Length:	382
+// seed 可能用来验证编队，如果编队不对的话就会报错.
+// 所以要打crisis可能得用有干员的号。然后graduate
+{
+    "assistFriend": null,
+    "rune": [
+        "enemy_atk_1",
+        "enemy_dbskar_1",
+        "enemy_dmgswd_1",
+        "enemy_dscout_1",
+        "enemy_dlancer_1"
+    ],
+    "seed": "wGKWuZHG1606502344",
+    "squad": {
+        "name": "",
+        "slots": [
+            {
+                "charInstId": 1,
+                "skillIndex": 0
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "squadId": "0"
+    },
+    "stageId": "level_rune_05-01",
+    "stageType": "PERMANENT",
+    "startTs": 1606502344
+}
