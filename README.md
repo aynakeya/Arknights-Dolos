@@ -81,6 +81,21 @@ ps: 对如何配置mitmproxy有疑问的建议参照 [Tao0Lu/Arknights-Cheater](
 
 运行 `python dataProcess.py`
 
+## 已实现addons
+
+1. ArkEssential: 转发本地服务器
+
+2. CharsEssential: 自定义角色前置
+
+3. BattleEssential: 自定义角色前置
+
+4. fakeGacha: 虚假10连
+
+5. graduateChars: 全满潜能，满级，满专精 (前置CharsEssential，BattleEssential)
+
+6. unlockSkins: 解锁全皮肤 (前置CharsEssential)
+
+7. userStatus: 自定义用户信息以及原石，只能拿来看.
 
 ## 效果
 自定义十连
