@@ -9,7 +9,7 @@ from addons.graduateChars import graduateChars
 from addons.unlockSkins import unlockSkins
 from addons.CharsEssential import CharsEssential
 from addons.BattleEssential import BattleEssential
-from model.troopBuilder import troopBuilder
+from model.troopBuilder import troopBuilder,characterBuilder
 
 class ProxyMaster(DumpMaster):
     def __init__(self, *args, **kwargs):

@@ -83,7 +83,7 @@ class troopBuilder():
         cdata = self.cBuilder.getCharacter(self.curCharInstId,charId)
         if cdata == None:
             return False
-        self.chars[self.curCharInstId] = cdata
+        self.chars[str(self.curCharInstId)] = cdata
         self.curCharInstId +=1
         return True
 
