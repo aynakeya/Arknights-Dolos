@@ -29,7 +29,24 @@ Arknights-Dolos/明日方舟中间人攻击框架
 
 直接获取明日方舟的数据是获取不到的，因为明日方舟使用了本地服务器进行转发
 
-利用mitmproxy可以转发
+利用mitmproxy可以将把数据传给服务器，略过本地服务器的转发
+
+```
+原来的:
+
+Request -> ak-gs.hypergryph.com -> ak-gs-localhost.hypergryph.com -> ak-gs.hypergryph.com 
+
+Request -> ak-gs.hypergryph.com -> ak-gs-b-localhost.hypergryph.com -> ak-gs.hypergryph.com
+ 
+Request -> ak-as.hypergryph.com -> ak-as-localhost.hypergryph.com -> ak-as.hypergryph.com
+
+mitmproxy修改后的
+
+Request -> ak-gs.hypergryph.com -> ak-gs.hypergryph.com 
+ 
+Request -> ak-as.hypergryph.com -> ak-as.hypergryph.com
+
+```
 
 破解本地服务器转发的方法来自 [GhostStar/Arknights-Armada](https://github.com/GhostStar/Arknights-Armada)
 
