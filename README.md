@@ -109,3 +109,7 @@ ps: 对如何配置mitmproxy有疑问的建议参照 [Tao0Lu/Arknights-Cheater](
 修改信息
 
 ![infoedit](https://user-images.githubusercontent.com/32156054/100481264-83894480-312e-11eb-90fb-e55654d6c05e.png)
+
+自定义角色
+
+![customChar](https://user-images.githubusercontent.com/32156054/100485093-c69ce500-3139-11eb-82e7-e21373f953ab.png)
