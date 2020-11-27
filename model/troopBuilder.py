@@ -46,7 +46,10 @@ class characterBuilder():
                     cdata[key] = val
         # 4星及其以上干员设置衣服, 专精
         if rarity >= 3:
-            cdata["skin"] = cdata['charId'] + "#2"
+            if (len(self.characters[cdata["charId"]]["skins"])>=2):
+                cdata["skin"] = self.characters[cdata["charId"]]["skins"][1]
+            else:
+                cdata["skin"] = self.characters[cdata["charId"]]["skins"][0]
             for skill in cdata["skills"]:
                 skill["unlock"] = 1
                 skill["specializeLevel"] = 3

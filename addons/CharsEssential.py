@@ -37,4 +37,5 @@ class CharsEssential(ArkInterceptor):
                 self.info("Find exist troop builder, write config to response")
                 data["user"]["troop"] = self.tBuilder.dump()
                 flow.response.set_text(json.dumps(data))
+            ArkInterceptor.tBuilder.setCharacterBuilder(ArkInterceptor.cBuilder)
             self.info("Complete")
