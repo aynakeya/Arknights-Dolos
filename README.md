@@ -65,3 +65,15 @@ ps: 对如何配置mitmproxy有疑问的建议参照 [Tao0Lu/Arknights-Cheater](
 运行 `python dataProcess.py`
 
 
+## 效果
+自定义十连
+
+![tengacha](https://user-images.githubusercontent.com/32156054/100481260-8126ea80-312e-11eb-9d04-f855ae813f28.png)
+
+全角色，全满级
+
+![allchar](https://user-images.githubusercontent.com/32156054/100481261-82581780-312e-11eb-8de6-9501c0c4e69d.png)
+
+修改信息
+
+![infoedit](https://user-images.githubusercontent.com/32156054/100481264-83894480-312e-11eb-90fb-e55654d6c05e.png)
