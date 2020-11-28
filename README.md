@@ -99,6 +99,8 @@ ps: 对如何配置mitmproxy有疑问的建议参照 [Tao0Lu/Arknights-Cheater](
 
 7. userStatus: 自定义用户信息以及原石，只能拿来看.
 
+8. allChars: 全干员 (前置CharsEssential，BattleEssential)
+
 ## 效果
 自定义十连
 
