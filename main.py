@@ -4,6 +4,8 @@ from mitmproxy.proxy.server import ProxyServer
 from mitmproxy.tools.dump import DumpMaster
 from mitmproxy import master
 from addons import ArkEssential,ArkInterceptor
+from addons.allChars import allChars
+from addons.moreChars import moreChars
 from addons.userStatus import userInfo,userData
 from addons.graduateChars import graduateChars
 from addons.unlockSkins import unlockSkins
@@ -47,9 +49,13 @@ if __name__ == "__main__":
     master.addons.add(ArkEssential())
     master.addons.add(CharsEssential())
     master.addons.add(BattleEssential())
+    master.addons.add(allChars())
+    # mc = moreChars()
+    # mc.addChars(["char_350_surtr"]*10+["char_172_svrash"]*10+["char_180_amgoat"]*10+["char_151_myrtle"]*5+["char_222_bpipe"]*5+["char_400_weedy"]*12)
+    # master.addons.add(mc)
     # master.addons.add(fakeGacha())
     #master.addons.add(userInfo.init("Rua牛","0000",120,0))
     #master.addons.add(userData.init(999,999,1919810,114514,6666666))
-    #master.addons.add(graduateChars())
-    #master.addons.add(unlockSkins())
+    master.addons.add(graduateChars())
+    master.addons.add(unlockSkins())
     master.run()

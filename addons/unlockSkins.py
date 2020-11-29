@@ -23,7 +23,7 @@ class unlockSkins(ArkInterceptor):
             resp = {"playerDataDelta": {"deleted": {},
                     "modified": { "troop": {"chars": {str(req["charInstId"]): {"skin": req["skinId"]}}}}}}
             self.info("make response")
-            self.tBuilder.chars[req["charInstId"]]["skin"] = req["skinId"]
+            self.tBuilder.chars[str(req["charInstId"])]["skin"] = req["skinId"]
             flow.response = HTTPResponse.make(200,
                                               json.dumps(resp),
                                               {"Content-Type":"application/json; charset=utf-8"})
