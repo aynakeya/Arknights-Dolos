@@ -55,6 +55,7 @@ class BattleEssential(ArkInterceptor):
             flow.response.set_text(json.dumps(data))
             self.info("complete")
 
+#master.addons.add(BattleEssential())
 
  # Deprecated
     # def _weak_request(self,flow: HTTPFlow):

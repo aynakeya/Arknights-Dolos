@@ -1,5 +1,6 @@
 from mitmproxy.http import HTTPFlow
 from model.troopBuilder import troopBuilder,characterBuilder
+
 class ArkInterceptor():
     # from https://github.com/GhostStar/Arknights-Armada/
     Servers = {"ak-gs-localhost.hypergryph.com": ("ak-gs.hypergryph.com", 8443),
@@ -28,6 +29,8 @@ class ArkInterceptor():
 
 
 class ArkEssential(ArkInterceptor):
+    def __init__(self):
+        self.info("Load success")
     def http_connect(self, flow: HTTPFlow):
         # replace all localhost server to correct server
         if (flow.request.host in self.Servers.keys()):

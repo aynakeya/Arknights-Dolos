@@ -39,3 +39,5 @@ class CharsEssential(ArkInterceptor):
                 flow.response.set_text(json.dumps(data))
             ArkInterceptor.tBuilder.setCharacterBuilder(ArkInterceptor.cBuilder)
             self.info("Complete")
+
+#master.addons.add(CharsEssential())

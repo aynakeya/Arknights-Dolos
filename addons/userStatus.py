@@ -85,3 +85,10 @@ class userData(ArkInterceptor):
                         data["user"]["status"][key] = val
             flow.response.set_text(json.dumps(data))
             self.info("Complete")
+
+#
+#info = userInfo.init("Rua牛","0000",120,0)
+#data = userData.init(999,999,1919810,114514,6666666)
+
+# master.addons.add(info)
+# master.addons.add(data)

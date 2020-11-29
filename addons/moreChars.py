@@ -26,3 +26,8 @@ class moreChars(ArkInterceptor):
             data["user"]["troop"] = self.tBuilder.dump()
             flow.response.set_text(json.dumps(data))
             self.info("Complete")
+
+# mc = moreChars()
+# mc.addChar("char_350_surtr")
+# mc.addChars(["char_350_surtr"]*10+["char_172_svrash"]*10+["char_180_amgoat"]*10+["char_151_myrtle"]*5+["char_222_bpipe"]*5+["char_400_weedy"]*12)
+# master.addons.add(mc)

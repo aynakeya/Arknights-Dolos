@@ -101,6 +101,8 @@ ps: 对如何配置mitmproxy有疑问的建议参照 [Tao0Lu/Arknights-Cheater](
 
 8. allChars: 全干员 (前置CharsEssential，BattleEssential)
 
+9. moreChars: 自定义干员 (前置CharsEssential，BattleEssential)
+
 ## 效果
 自定义十连
 

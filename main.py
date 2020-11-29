@@ -2,6 +2,8 @@ from mitmproxy.options import Options
 from mitmproxy.proxy.config import ProxyConfig
 from mitmproxy.proxy.server import ProxyServer
 from mitmproxy.tools.dump import DumpMaster
+from mitmproxy.tools.web.master import WebMaster
+from mitmproxy.tools.console.master import ConsoleMaster
 from mitmproxy import master
 from addons import ArkEssential,ArkInterceptor
 from addons.allChars import allChars
@@ -13,38 +15,26 @@ from addons.CharsEssential import CharsEssential
 from addons.BattleEssential import BattleEssential
 from model.troopBuilder import troopBuilder,characterBuilder
 
-class ProxyMaster(DumpMaster):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-    def run(self):
-        print("run")
-        try:
-            DumpMaster.run(self)
-        except KeyboardInterrupt:
-            self.shutdown()
-
-def run_web_debug(options):
-    '''
-
-    :param options:
-    :return:
-    '''
-    from mitmproxy.tools import web
-    webserver = web.master.WebMaster(options)
+def run_web(options):
+    webserver = WebMaster(options)
     webserver.server = ProxyServer(ProxyConfig(options))
     return webserver  # type: master.Master
 
 
-def run_proxy(options, **kwargs):
-    server = ProxyMaster(options, with_termlog=False, with_dumper=False, **kwargs)
+def run_dump(options):
+    server = DumpMaster(options, with_termlog=False, with_dumper=False)
+    server.server = ProxyServer(ProxyConfig(options))
+    return server  # type: master.Master
+
+def run_console(options):
+    server = ConsoleMaster(options)
     server.server = ProxyServer(ProxyConfig(options))
     return server  # type: master.Master
 
 
 if __name__ == "__main__":
     ops = Options(listen_host='0.0.0.0', listen_port=8080, http2=True, ssl_insecure=True)
-    master = run_web_debug(ops)
+    master = run_dump(ops)
     #ArkInterceptor.tBuilder = troopBuilder.init()
     master.addons.add(ArkEssential())
     master.addons.add(CharsEssential())

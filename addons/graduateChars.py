@@ -20,3 +20,5 @@ class graduateChars(ArkInterceptor):
             data["user"]["troop"] = self.tBuilder.dump()
             flow.response.set_text(json.dumps(data))
             self.info("Complete")
+
+#master.addons.add(graduateChars())

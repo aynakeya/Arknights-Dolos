@@ -37,3 +37,5 @@ class unlockSkins(ArkInterceptor):
             data["user"]["skin"]["characterSkins"] = dict((key, 1) for key in self.cBuilder.skins)
             flow.response.set_text(json.dumps(data))
             self.info("Complete")
+
+#master.addons.add(unlockSkins())
