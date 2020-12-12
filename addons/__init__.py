@@ -8,6 +8,7 @@ class ArkInterceptor():
                "ak-as-localhost.hypergryph.com": ("ak-as.hypergryph.com", 9443)}
 
     ServersList = [key for key in Servers.keys()] + [val[0] for val in Servers.values()]
+
     tBuilder = None # type:troopBuilder
     cBuilder = characterBuilder.init()
 
