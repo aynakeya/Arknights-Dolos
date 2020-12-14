@@ -36,17 +36,17 @@ Arknights-Dolos/明日方舟中间人攻击框架
 ```
 原来的:
 
-Request -> ak-gs.hypergryph.com -> ak-gs-localhost.hypergryph.com -> ak-gs.hypergryph.com 
+Request -> ak-gs-localhost.hypergryph.com -> ak-gs.hypergryph.com 
 
-Request -> ak-gs.hypergryph.com -> ak-gs-b-localhost.hypergryph.com -> ak-gs.hypergryph.com
+Request -> ak-gs-b-localhost.hypergryph.com -> ak-gs.hypergryph.com
  
-Request -> ak-as.hypergryph.com -> ak-as-localhost.hypergryph.com -> ak-as.hypergryph.com
+Request -> ak-as-localhost.hypergryph.com -> ak-as.hypergryph.com
 
 mitmproxy修改后的
 
-Request -> ak-gs.hypergryph.com -> ak-gs.hypergryph.com 
+Request -> ak-gs.hypergryph.com 
  
-Request -> ak-as.hypergryph.com -> ak-as.hypergryph.com
+Request -> ak-as.hypergryph.com
 
 ```
 
