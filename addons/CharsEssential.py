@@ -10,7 +10,7 @@ class CharsEssential(ArkInterceptor):
         self.info("Loading success, mode %s" %self.mode)
 
     def request(self, flow:HTTPFlow):
-        if flow.request.host in self.ServersList and flow.request.path.startswith("/charBuild/setDefaultSkill"):
+        if self.inServersList(flow.request.host) and flow.request.path.startswith("/charBuild/setDefaultSkill"):
             self.info("Receive default skill change change request")
             req = json.loads(flow.request.get_text())
             self.tBuilder.chars[str(req["charInstId"])]["defaultSkillIndex"] = req["defaultSkillIndex"]
@@ -25,7 +25,7 @@ class CharsEssential(ArkInterceptor):
             self.info("Reply Complete")
 
     def response(self, flow: HTTPFlow):
-        if flow.request.host in self.ServersList and flow.request.path.startswith("/account/syncData"):
+        if self.inServersList(flow.request.host) and flow.request.path.startswith("/account/syncData"):
             data = json.loads(flow.response.get_text())
             if self.tBuilder is None:
                 self.info("Troop builder not found, create from response data")

@@ -17,7 +17,7 @@ class unlockSkins(ArkInterceptor):
                 "skinId": "char_123_fang#1"
             }
         """
-        if flow.request.host in self.ServersList and flow.request.path.startswith("/charBuild/changeCharSkin"):
+        if self.inServersList(flow.request.host) and flow.request.path.startswith("/charBuild/changeCharSkin"):
             self.info("Receive skin change request")
             req = json.loads(flow.request.get_text())
             resp = {"playerDataDelta": {"deleted": {},
@@ -30,7 +30,7 @@ class unlockSkins(ArkInterceptor):
             self.info("Reply Complete")
 
     def response(self, flow: HTTPFlow):
-        if flow.request.host in self.ServersList and flow.request.path.startswith("/account/syncData"):
+        if self.inServersList(flow.request.host) and flow.request.path.startswith("/account/syncData"):
             self.info("Receive response")
             data = json.loads(flow.response.get_text())
             self.info("Unlocking....")

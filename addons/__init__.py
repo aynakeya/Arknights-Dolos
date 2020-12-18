@@ -1,5 +1,6 @@
 from mitmproxy.http import HTTPFlow
 from model.troopBuilder import troopBuilder,characterBuilder
+import re
 
 class ArkInterceptor():
     # from https://github.com/GhostStar/Arknights-Armada/
@@ -24,6 +25,9 @@ class ArkInterceptor():
 
     def response(self, flow: HTTPFlow):
         pass
+
+    def inServersList(self,url):
+        return re.match(r"ak-.*\.hypergryph.com",url) != None
 
     def info(self,msg):
         print("Arkhack - %s > %s" %(self.__class__.__name__,msg))

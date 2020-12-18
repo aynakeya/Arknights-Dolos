@@ -78,6 +78,12 @@ class troopBuilder():
     def setCharacterBuilder(self,cb: characterBuilder):
         self.cBuilder =cb
 
+    def getCharData(self,charId):
+        for char in self.chars.values():
+            if char["charId"] == charId:
+                return char
+        return None
+
     def addCharacter(self,charId,force=False):
         if not force:
             for c in self.chars.values():

@@ -103,6 +103,8 @@ ps: 对如何配置mitmproxy有疑问的建议参照 [Tao0Lu/Arknights-Cheater](
 
 9. moreChars: 自定义干员 (前置CharsEssential，BattleEssential)
 
+10. gachaSimulation: 抽卡模拟器 (前置CharsEssential，allChars)
+
 ## 效果
 自定义十连
 

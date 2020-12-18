@@ -23,7 +23,7 @@ class BattleEssential(ArkInterceptor):
                 "squadId": "0"
             }
         """
-        if flow.request.host in self.ServersList and flow.request.path.startswith("/quest/squadFormation"):
+        if self.inServersList(flow.request.host) and flow.request.path.startswith("/quest/squadFormation"):
             self.info("Receive squad change request")
             req = json.loads(flow.request.get_text())
             self.tBuilder.squads[req["squadId"]]["slots"] = req["slots"]
@@ -35,7 +35,7 @@ class BattleEssential(ArkInterceptor):
             flow.request.set_text(json.dumps(req))
             self.info("complete")
 
-        if flow.request.host in self.ServersList and (flow.request.path.startswith("/quest/battleStart") or
+        if self.inServersList(flow.request.host) and (flow.request.path.startswith("/quest/battleStart") or
                                                       flow.request.path.startswith("/campaignV2/battleStart")):
             self.info("battle %s start: setting squad for remote server" % flow.request.path.split("/")[1])
             req = json.loads(flow.request.get_text())
@@ -47,7 +47,7 @@ class BattleEssential(ArkInterceptor):
             self.info("complete")
 
     def response(self, flow: HTTPFlow):
-        if flow.request.host in self.ServersList and flow.request.path.startswith("/quest/squadFormation"):
+        if self.inServersList(flow.request.host) and flow.request.path.startswith("/quest/squadFormation"):
             data = json.loads(flow.response.get_text())
             self.info('setting squad data for local modification')
             for sid in data['playerDataDelta']['modified']['troop']['squads'].keys():
@@ -59,7 +59,7 @@ class BattleEssential(ArkInterceptor):
 
  # Deprecated
     # def _weak_request(self,flow: HTTPFlow):
-    #     if flow.request.host in self.ServersList and flow.request.path.startswith("/quest/squadFormation"):
+    #     if self.inServersList(flow.request.host) and flow.request.path.startswith("/quest/squadFormation"):
     #         self.info("setting squad for remote server sync")
     #         req = json.loads(flow.request.get_text())
     #         self.tBuilder.squads[req["squadId"]]["slots"] = req["slots"]
@@ -69,7 +69,7 @@ class BattleEssential(ArkInterceptor):
     #                 s["skillIndex"] = 0
     #         flow.request.set_text(json.dumps(req))
     #         self.info("complete")
-    #     if flow.request.host in self.ServersList and flow.request.path.startswith("/charBuild/setDefaultSkill"):
+    #     if self.inServersList(flow.request.host) and flow.request.path.startswith("/charBuild/setDefaultSkill"):
     #         self.info("Receive default skill change change request")
     #         req = json.loads(flow.request.get_text())
     #         self.tBuilder.chars[str(req["charInstId"])]["defaultSkillIndex"] = req["defaultSkillIndex"]
@@ -81,7 +81,7 @@ class BattleEssential(ArkInterceptor):
     #                                           json.dumps(resp),
     #                                           {"Content-Type": "application/json; charset=utf-8"})
     #         self.info("Reply Complete")
-    #     if flow.request.host in self.ServersList and flow.request.path.startswith("/quest/battleStart"):
+    #     if self.inServersList(flow.request.host) and flow.request.path.startswith("/quest/battleStart"):
     #         self.info("battle start: setting squad for remote server")
     #         req = json.loads(flow.request.get_text())
     #         for s in req['squad']['slots']:
@@ -92,7 +92,7 @@ class BattleEssential(ArkInterceptor):
     #
     #
     # def _weak_response(self,flow: HTTPFlow):
-    #     if flow.request.host in self.ServersList and flow.request.path.startswith("/quest/squadFormation"):
+    #     if self.inServersList(flow.request.host) and flow.request.path.startswith("/quest/squadFormation"):
     #         data = json.loads(flow.response.get_text())
     #         self.info('setting squad data for local modification')
     #         for sid in data['playerDataDelta']['modified']['troop']['squads'].keys():

@@ -10,7 +10,7 @@ class allChars(ArkInterceptor):
         self.info("Loading success")
 
     def response(self, flow: HTTPFlow):
-        if flow.request.host in self.ServersList and flow.request.path.startswith("/account/syncData"):
+        if self.inServersList(flow.request.host) and flow.request.path.startswith("/account/syncData"):
             self.info("Receive response")
             data = json.loads(flow.response.get_text())
             char = []

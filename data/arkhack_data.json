@@ -366,6 +366,18 @@
         "char_118_yuki#2"
       ]
     },
+    "char_440_pinecn": {
+      "rarity": 3,
+      "obtainable": true,
+      "skills": [
+        "skchr_pinecn_1",
+        "skchr_pinecn_2"
+      ],
+      "skins": [
+        "char_440_pinecn#1",
+        "char_440_pinecn#2"
+      ]
+    },
     "char_302_glaze": {
       "rarity": 3,
       "obtainable": true,
@@ -861,7 +873,8 @@
       ],
       "skins": [
         "char_401_elysm#1",
-        "char_401_elysm#2"
+        "char_401_elysm#2",
+        "char_401_elysm@snow#2"
       ]
     },
     "char_308_swire": {
@@ -1404,6 +1417,18 @@
         "char_243_waaifu#2"
       ]
     },
+    "char_214_kafka": {
+      "rarity": 4,
+      "obtainable": true,
+      "skills": [
+        "skchr_kafka_1",
+        "skchr_kafka_2"
+      ],
+      "skins": [
+        "char_214_kafka#1",
+        "char_214_kafka#2"
+      ]
+    },
     "char_107_liskam": {
       "rarity": 4,
       "obtainable": true,
@@ -1490,6 +1515,7 @@
       "skins": [
         "char_158_milu#1",
         "char_158_milu#2",
+        "char_158_milu@snow#2",
         "char_158_milu@wild#2"
       ]
     },
@@ -1631,6 +1657,18 @@
         "char_241_panda#1",
         "char_241_panda#2",
         "char_241_panda@marthe#1"
+      ]
+    },
+    "char_451_robin": {
+      "rarity": 4,
+      "obtainable": true,
+      "skills": [
+        "skchr_robin_1",
+        "skchr_robin_2"
+      ],
+      "skins": [
+        "char_451_robin#1",
+        "char_451_robin#2"
       ]
     },
     "char_103_angel": {
@@ -1852,7 +1890,8 @@
       ],
       "skins": [
         "char_400_weedy#1",
-        "char_400_weedy#2"
+        "char_400_weedy#2",
+        "char_400_weedy@snow#2"
       ]
     },
     "char_225_haak": {
@@ -1921,6 +1960,7 @@
       "skins": [
         "char_202_demkni#1",
         "char_202_demkni#2",
+        "char_202_demkni@test#1",
         "char_202_demkni@boc#1"
       ]
     },
@@ -1974,6 +2014,19 @@
       "skins": [
         "char_416_zumama#1",
         "char_416_zumama#2"
+      ]
+    },
+    "char_264_f12yin": {
+      "rarity": 5,
+      "obtainable": true,
+      "skills": [
+        "skchr_f12yin_1",
+        "skchr_f12yin_2",
+        "skchr_f12yin_3"
+      ],
+      "skins": [
+        "char_264_f12yin#1",
+        "char_264_f12yin#2"
       ]
     },
     "char_172_svrash": {
@@ -2190,7 +2243,8 @@
         "sktok_weedy_token"
       ],
       "skins": [
-        "token_10009_weedy_cannon#1"
+        "token_10009_weedy_cannon#1",
+        "token_10009_weedy_cannon_snow#2"
       ]
     },
     "token_10010_folivo_car": {
@@ -2226,6 +2280,28 @@
       "skins": [
         "token_10012_rosmon_shield#1",
         "token_10012_rosmon_shield#2"
+      ]
+    },
+    "token_10013_robin_mine": {
+      "rarity": 4,
+      "obtainable": true,
+      "skills": [
+        "sktok_robin_1",
+        "sktok_robin_2"
+      ],
+      "skins": [
+        "token_10013_robin_mine#1"
+      ]
+    },
+    "token_10014_bstalk_crab": {
+      "rarity": 3,
+      "obtainable": true,
+      "skills": [
+        null,
+        null
+      ],
+      "skins": [
+        "token_10014_bstalk_crab#1"
       ]
     },
     "trap_001_crate": {
@@ -2444,6 +2520,16 @@
         "trap_024_npcsld#1"
       ]
     },
+    "trap_025_prison": {
+      "rarity": 0,
+      "obtainable": true,
+      "skills": [
+        "sktok_prison"
+      ],
+      "skins": [
+        "trap_025_prison#1"
+      ]
+    },
     "char_230_savage": {
       "rarity": 4,
       "obtainable": true,
@@ -2547,6 +2633,7 @@
     "char_002_amiya@winter#1",
     "char_181_flower@daily#1",
     "char_002_amiya@epoque#4",
+    "char_202_demkni@test#1",
     "char_208_melan@epoque#1",
     "char_109_fmout@epoque#2",
     "char_187_ccheal@epoque#2",
@@ -2598,6 +2685,9 @@
     "char_172_svrash@snow#1",
     "char_174_slbell@snow#1",
     "char_209_ardign@snow#1",
+    "char_400_weedy@snow#2",
+    "char_401_elysm@snow#2",
+    "char_158_milu@snow#2",
     "char_103_angel@wild#1",
     "char_173_slchan@wild#1",
     "char_117_myrrh@wild#1",
