@@ -17,6 +17,7 @@ from addons.unlockSkins import unlockSkins
 from addons.CharsEssential import CharsEssential
 from addons.BattleEssential import BattleEssential
 from model.troopBuilder import troopBuilder,characterBuilder
+import json
 
 def run_web(options):
     webserver = WebMaster(options)
@@ -35,7 +36,6 @@ def run_console(options):
     return server  # type: master.Master
 from mitmproxy.http import HTTPFlow
 
-
 if __name__ == "__main__":
     ops = Options(listen_host='0.0.0.0', listen_port=8080, http2=True, ssl_insecure=True)
     master = run_web(ops)
@@ -44,16 +44,16 @@ if __name__ == "__main__":
     master.addons.add(CharsEssential())
     master.addons.add(BattleEssential())
     master.addons.add(allChars())
-    # mc = moreChars()
-    # mc.addChar("char_204_platnm")
-    # mc.addChars(["char_350_surtr"]*10+["char_172_svrash"]*10+["char_180_amgoat"]*10+["char_151_myrtle"]*5+["char_222_bpipe"]*5+["char_400_weedy"]*12)
-    # master.addons.add(mc)
-    # master.addons.add(fakeGacha())
-    master.addons.add(userInfo.init("Rua牛","0000",120,0))
-    master.addons.add(userData.init(999,999,1919810,114514,6666666))
     master.addons.add(graduateChars())
     master.addons.add(unlockSkins())
-    gs = gachaSimulation()
-    gs.setUp("char_264_f12yin","char_108_silent","char_214_kafka","char_440_pinecn")
-    master.addons.add(gs)
+    # mc = moreChars()
+    # mc.addChars(["char_400_weedy"]*12)
+    # master.addons.add(mc)
+    #master.addons.add(testa())
+    # master.addons.add(fakeGacha())
+    # master.addons.add(userInfo.init("Rua牛","0000",120,0))
+    # master.addons.add(userData.init(999,999,1919810,114514,6666666))
+    # gs = gachaSimulation()
+    # gs.setUp("char_264_f12yin","char_108_silent","char_214_kafka","char_440_pinecn")
+    # master.addons.add(gs)
     master.run()

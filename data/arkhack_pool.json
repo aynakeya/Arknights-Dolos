@@ -32,7 +32,8 @@
         "char_350_surtr",
         "char_423_blemsh",
         "char_311_mudrok",
-        "char_264_f12yin"
+        "char_264_f12yin",
+        "char_332_archet"
       ],
       "totalPercent": 0.02,
       "upPercent":0.5
@@ -90,7 +91,8 @@
         "char_365_aprl",
         "char_346_aosta",
         "char_436_whispr",
-        "char_214_kafka"
+        "char_214_kafka",
+        "char_338_iris"
       ],
       "totalPercent": 0.08,
       "upPercent":0.5
@@ -135,7 +137,8 @@
         "char_271_spikes",
         "char_381_bubble",
         "char_347_jaksel",
-        "char_440_pinecn"
+        "char_440_pinecn",
+        "char_452_bstalk"
       ],
       "totalPercent": 0.5,
       "upPercent":0.2

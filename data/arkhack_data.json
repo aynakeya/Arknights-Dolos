@@ -288,7 +288,8 @@
       ],
       "skins": [
         "char_253_greyy#1",
-        "char_253_greyy#2"
+        "char_253_greyy#2",
+        "char_253_greyy@epoque#8"
       ]
     },
     "char_328_cammou": {
@@ -452,6 +453,18 @@
         "char_151_myrtle#2"
       ]
     },
+    "char_452_bstalk": {
+      "rarity": 3,
+      "obtainable": true,
+      "skills": [
+        "skchr_bstalk_1",
+        "skchr_bstalk_2"
+      ],
+      "skins": [
+        "char_452_bstalk#1",
+        "char_452_bstalk#2"
+      ]
+    },
     "char_130_doberm": {
       "rarity": 3,
       "obtainable": true,
@@ -559,7 +572,8 @@
       ],
       "skins": [
         "char_271_spikes#1",
-        "char_271_spikes#2"
+        "char_271_spikes#2",
+        "char_271_spikes@winter#2"
       ]
     },
     "char_237_gravel": {
@@ -571,7 +585,8 @@
       ],
       "skins": [
         "char_237_gravel#1",
-        "char_237_gravel#2"
+        "char_237_gravel#2",
+        "char_237_gravel@winter#2"
       ]
     },
     "char_272_strong": {
@@ -994,7 +1009,8 @@
       ],
       "skins": [
         "char_252_bibeak#1",
-        "char_252_bibeak#2"
+        "char_252_bibeak#2",
+        "char_252_bibeak@winter#2"
       ]
     },
     "char_143_ghost": {
@@ -1271,6 +1287,18 @@
         "char_388_mint#2"
       ]
     },
+    "char_338_iris": {
+      "rarity": 4,
+      "obtainable": true,
+      "skills": [
+        "skchr_iris_1",
+        "skchr_iris_2"
+      ],
+      "skins": [
+        "char_338_iris#1",
+        "char_338_iris#2"
+      ]
+    },
     "char_242_otter": {
       "rarity": 4,
       "obtainable": true,
@@ -1306,6 +1334,7 @@
       "skins": [
         "char_108_silent#1",
         "char_108_silent#2",
+        "char_108_silent@winter#2",
         "char_108_silent@sweep#1"
       ]
     },
@@ -1684,6 +1713,19 @@
         "char_103_angel#2",
         "char_103_angel@wild#1",
         "char_103_angel@kfc#1"
+      ]
+    },
+    "char_332_archet": {
+      "rarity": 5,
+      "obtainable": true,
+      "skills": [
+        "skchr_archet_1",
+        "skchr_archet_2",
+        "skchr_archet_3"
+      ],
+      "skins": [
+        "char_332_archet#1",
+        "char_332_archet#2"
       ]
     },
     "char_340_shwaz": {
@@ -2119,6 +2161,7 @@
       ],
       "skins": [
         "token_10000_silent_healrb#1",
+        "token_10000_silent_healrb_winter#1",
         "token_10000_silent_healrb_sweep#1"
       ]
     },
@@ -2647,6 +2690,7 @@
     "char_102_texas@epoque#7",
     "char_130_doberm@epoque#7",
     "char_355_ethan@epoque#7",
+    "char_253_greyy@epoque#8",
     "char_120_hibisc@nian#1",
     "char_010_chen@nian#2",
     "char_308_swire@nian#2",
@@ -2681,6 +2725,10 @@
     "char_143_ghost@winter#1",
     "char_198_blackd@winter#1",
     "char_123_fang@winter#1",
+    "char_252_bibeak@winter#2",
+    "char_271_spikes@winter#2",
+    "char_237_gravel@winter#2",
+    "char_108_silent@winter#2",
     "char_340_shwaz@snow#1",
     "char_172_svrash@snow#1",
     "char_174_slbell@snow#1",
