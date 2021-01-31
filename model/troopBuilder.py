@@ -30,7 +30,7 @@ class characterBuilder():
                 "level":1,
                 "exp":0,
                 "evolvePhase":0,
-                "defaultSkillIndex":-1 if self.characters[charId]["rarity"] <=1 else 1,
+                "defaultSkillIndex":-1 if self.characters[charId]["rarity"] <=1 else 0,
                 "gainTime":self.starttime,
                 "skills":[{"skillId":skillId,
                            "unlock":1 if index == 0 else 0,
