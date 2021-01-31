@@ -29,8 +29,8 @@ class BattleEssential(ArkInterceptor):
             self.tBuilder.squads[req["squadId"]]["slots"] = req["slots"]
             req = copy.deepcopy(req)
             req["slots"] = [{
-                "charInstId": 2,
-                "skillIndex": 0
+                "charInstId": 91,
+                "skillIndex": 2
             }, None, None, None, None, None, None, None, None, None, None, None]
             flow.request.set_text(json.dumps(req))
             self.info("complete")
@@ -40,8 +40,8 @@ class BattleEssential(ArkInterceptor):
             self.info("battle %s start: setting squad for remote server" % flow.request.path.split("/")[1])
             req = json.loads(flow.request.get_text())
             req['squad']['slots'] = [{
-                "charInstId": 2,
-                "skillIndex": 0
+                "charInstId": 91,
+                "skillIndex": 2
             }, None, None, None, None, None, None, None, None, None, None, None]
             flow.request.set_text(json.dumps(req))
             self.info("complete")

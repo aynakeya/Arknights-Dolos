@@ -30,7 +30,7 @@ class characterBuilder():
                 "level":1,
                 "exp":0,
                 "evolvePhase":0,
-                "defaultSkillIndex":-1 if self.characters[charId]["rarity"] <=1 else 0,
+                "defaultSkillIndex":-1 if self.characters[charId]["rarity"] <=1 else 1,
                 "gainTime":self.starttime,
                 "skills":[{"skillId":skillId,
                            "unlock":1 if index == 0 else 0,
@@ -46,10 +46,12 @@ class characterBuilder():
                     cdata[key] = val
         # 4星及其以上干员设置衣服, 专精
         if rarity >= 3:
-            if (len(self.characters[cdata["charId"]]["skins"])>=2):
-                cdata["skin"] = self.characters[cdata["charId"]]["skins"][1]
+            if (len(self.characters[cdata["charId"]]["skins"])>=3):
+                cdata["skin"] = self.characters[cdata["charId"]]["skins"][2]
+            elif (len(self.characters[cdata["charId"]]["skins"]) < 2):
+                    cdata["skin"] = self.characters[cdata["charId"]]["skins"][0]
             else:
-                cdata["skin"] = self.characters[cdata["charId"]]["skins"][0]
+                 cdata["skin"] = self.characters[cdata["charId"]]["skins"][1]
             for skill in cdata["skills"]:
                 skill["unlock"] = 1
                 skill["specializeLevel"] = 3
