@@ -30,7 +30,7 @@ class BattleEssential(ArkInterceptor):
             req = copy.deepcopy(req)
             req["slots"] = [{
                 "charInstId": 2,
-                "skillIndex": 0
+                "skillIndex": -1
             }, None, None, None, None, None, None, None, None, None, None, None]
             flow.request.set_text(json.dumps(req))
             self.info("complete")
@@ -41,7 +41,7 @@ class BattleEssential(ArkInterceptor):
             req = json.loads(flow.request.get_text())
             req['squad']['slots'] = [{
                 "charInstId": 2,
-                "skillIndex": 0
+                "skillIndex": -1
             }, None, None, None, None, None, None, None, None, None, None, None]
             flow.request.set_text(json.dumps(req))
             self.info("complete")
