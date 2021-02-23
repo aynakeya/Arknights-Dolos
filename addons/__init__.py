@@ -1,5 +1,6 @@
 from mitmproxy.http import HTTPFlow
 from model.troopBuilder import troopBuilder,characterBuilder
+from functools import wraps
 import re
 
 class ArkInterceptor():
@@ -16,6 +17,16 @@ class ArkInterceptor():
     @staticmethod
     def setTroopBuilder(tb):
         ArkInterceptor.tBuilder = tb
+    @staticmethod
+    def checkExecutable(func):
+        @wraps(func)
+        def check(*args,**kwargs):
+            if func.executable():
+                func(*args,**kwargs)
+        return check
+
+    def executable(self):
+        return True
 
     def http_connect(self, flow: HTTPFlow):
         pass

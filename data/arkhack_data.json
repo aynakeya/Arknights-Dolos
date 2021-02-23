@@ -1299,6 +1299,18 @@
         "char_338_iris#2"
       ]
     },
+    "char_1011_lava2": {
+      "rarity": 4,
+      "obtainable": true,
+      "skills": [
+        "skchr_lava2_1",
+        "skchr_lava2_2"
+      ],
+      "skins": [
+        "char_1011_lava2#1",
+        "char_1011_lava2#2"
+      ]
+    },
     "char_242_otter": {
       "rarity": 4,
       "obtainable": true,
@@ -1394,7 +1406,20 @@
       ],
       "skins": [
         "char_436_whispr#1",
-        "char_436_whispr#2"
+        "char_436_whispr#2",
+        "char_436_whispr@nian#4"
+      ]
+    },
+    "char_402_tuye": {
+      "rarity": 4,
+      "obtainable": true,
+      "skills": [
+        "skchr_tuye_1",
+        "skchr_tuye_2"
+      ],
+      "skins": [
+        "char_402_tuye#1",
+        "char_402_tuye#2"
       ]
     },
     "char_148_nearl": {
@@ -1419,7 +1444,8 @@
       ],
       "skins": [
         "char_226_hmau#1",
-        "char_226_hmau#2"
+        "char_226_hmau#2",
+        "char_226_hmau@nian#4"
       ]
     },
     "char_144_red": {
@@ -1456,6 +1482,18 @@
       "skins": [
         "char_214_kafka#1",
         "char_214_kafka#2"
+      ]
+    },
+    "char_455_nothin": {
+      "rarity": 4,
+      "obtainable": true,
+      "skills": [
+        "skchr_nothin_1",
+        "skchr_nothin_2"
+      ],
+      "skins": [
+        "char_455_nothin#1",
+        "char_455_nothin#2"
       ]
     },
     "char_107_liskam": {
@@ -1810,6 +1848,19 @@
         "char_222_bpipe@race#1"
       ]
     },
+    "char_362_saga": {
+      "rarity": 5,
+      "obtainable": true,
+      "skills": [
+        "skcom_charge_cost[3]",
+        "skchr_saga_2",
+        "skchr_saga_3"
+      ],
+      "skins": [
+        "char_362_saga#1",
+        "char_362_saga#2"
+      ]
+    },
     "char_134_ifrit": {
       "rarity": 5,
       "obtainable": true,
@@ -1864,6 +1915,19 @@
         "char_2013_cerber#1",
         "char_2013_cerber#2",
         "char_2013_cerber@summer#4"
+      ]
+    },
+    "char_2015_dusk": {
+      "rarity": 5,
+      "obtainable": true,
+      "skills": [
+        "skchr_dusk_1",
+        "skchr_dusk_2",
+        "skchr_dusk_3"
+      ],
+      "skins": [
+        "char_2015_dusk#1",
+        "char_2015_dusk#2"
       ]
     },
     "char_291_aglina": {
@@ -1946,7 +2010,8 @@
       ],
       "skins": [
         "char_225_haak#1",
-        "char_225_haak#2"
+        "char_225_haak#2",
+        "char_225_haak@nian#4"
       ]
     },
     "char_147_shining": {
@@ -2029,7 +2094,8 @@
       ],
       "skins": [
         "char_2014_nian#1",
-        "char_2014_nian#2"
+        "char_2014_nian#2",
+        "char_2014_nian@nian#4"
       ]
     },
     "char_311_mudrok": {
@@ -2347,6 +2413,19 @@
         "token_10014_bstalk_crab#1"
       ]
     },
+    "token_10015_dusk_drgn": {
+      "rarity": 5,
+      "obtainable": true,
+      "skills": [
+        null,
+        null,
+        null
+      ],
+      "skins": [
+        "token_10015_dusk_drgn#1",
+        "token_10015_dusk_drgn#2"
+      ]
+    },
     "trap_001_crate": {
       "rarity": 0,
       "obtainable": true,
@@ -2573,6 +2652,26 @@
         "trap_025_prison#1"
       ]
     },
+    "trap_026_inverter": {
+      "rarity": 0,
+      "obtainable": true,
+      "skills": [
+        "sktok_inverter"
+      ],
+      "skins": [
+        "trap_026_inverter#1"
+      ]
+    },
+    "trap_027_stone": {
+      "rarity": 0,
+      "obtainable": true,
+      "skills": [
+        "sktok_stone"
+      ],
+      "skins": [
+        "trap_027_stone#1"
+      ]
+    },
     "char_230_savage": {
       "rarity": 4,
       "obtainable": true,
@@ -2697,6 +2796,10 @@
     "char_107_liskam@nian#2",
     "char_235_jesica@nian#2",
     "char_136_hsguma@nian#3",
+    "char_2014_nian@nian#4",
+    "char_225_haak@nian#4",
+    "char_226_hmau@nian#4",
+    "char_436_whispr@nian#4",
     "char_147_shining@summer#1",
     "char_166_skfire@summer#1",
     "char_290_vigna@summer#1",

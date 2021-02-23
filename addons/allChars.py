@@ -7,8 +7,13 @@ class allChars(ArkInterceptor):
         Require: CharsEssential,BattleEssential
     '''
     def __init__(self):
+        self.execute = True
         self.info("Loading success")
 
+    def executable(self):
+        return self.execute
+
+    @ArkInterceptor.checkExecutable
     def response(self, flow: HTTPFlow):
         if self.inServersList(flow.request.host) and flow.request.path.startswith("/account/syncData"):
             self.info("Receive response")
@@ -24,6 +29,7 @@ class allChars(ArkInterceptor):
             data["user"]["troop"] = self.tBuilder.dump()
             flow.response.set_text(json.dumps(data))
             self.info("Complete")
+            self.execute = False
 
 
 #master.addons.add(allChars())

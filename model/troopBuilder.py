@@ -86,6 +86,13 @@ class troopBuilder():
                 return char
         return None
 
+    def getCharInstIds(self,charId):
+        ids = []
+        for key,char in self.chars.items():
+            if char["charId"] == charId:
+                ids.append(key)
+        return ids
+
     def addCharacter(self,charId,force=False):
         if not force:
             for c in self.chars.values():
