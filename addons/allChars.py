@@ -9,7 +9,6 @@ class allChars(ArkInterceptor):
     def __init__(self):
         self.execute = True
         self.info("Loading success")
-
     def executable(self):
         return self.execute
 

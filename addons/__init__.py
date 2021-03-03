@@ -14,15 +14,17 @@ class ArkInterceptor():
     tBuilder = None # type:troopBuilder
     cBuilder = characterBuilder.init()
 
+
     @staticmethod
     def setTroopBuilder(tb):
         ArkInterceptor.tBuilder = tb
+
     @staticmethod
     def checkExecutable(func):
         @wraps(func)
-        def check(*args,**kwargs):
-            if func.executable():
-                func(*args,**kwargs)
+        def check(self,*args,**kwargs):
+            if self.executable():
+                func(self,*args,**kwargs)
         return check
 
     def executable(self):

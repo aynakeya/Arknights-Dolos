@@ -38,18 +38,25 @@ from mitmproxy.http import HTTPFlow
 
 if __name__ == "__main__":
     ops = Options(listen_host='0.0.0.0', listen_port=8080, http2=True, ssl_insecure=True)
-    master = run_dump(ops)
+    master = run_web(ops)
     #ArkInterceptor.tBuilder = troopBuilder.init()
     master.addons.add(ArkEssential())
     master.addons.add(CharsEssential())
     master.addons.add(BattleEssential())
     master.addons.add(allChars())
-    master.addons.add(graduateChars())
-    master.addons.add(unlockSkins())
+    # master.addons.add(graduateChars())
+    # master.addons.add(unlockSkins())
     # mc = moreChars()
     # mc.addChars(["char_252_bibeak"])
     # master.addons.add(mc)
     # master.addons.add(fakeGacha())
-    # master.addons.add(userInfo.init("月云影静","0000",120,0))
+    # master.addons.add(userInfo.init("123","0000",120,0))
     # master.addons.add(userData.init(999,999,666,233,101))
+
+    gs = gachaSimulation()
+    gs.addUp("char_340_shwaz","char_350_surtr")
+    gs.addUp("char_107_liskam",
+                        "char_173_slchan",
+                        "char_346_aosta")
+    master.addons.add(gs)
     master.run()
