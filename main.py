@@ -41,9 +41,9 @@ if __name__ == "__main__":
     master = run_web(ops)
     #ArkInterceptor.tBuilder = troopBuilder.init()
     master.addons.add(ArkEssential())
-    master.addons.add(CharsEssential())
-    master.addons.add(BattleEssential())
-    master.addons.add(allChars())
+    # master.addons.add(CharsEssential())
+    # master.addons.add(BattleEssential())
+    # master.addons.add(allChars())
     # master.addons.add(graduateChars())
     # master.addons.add(unlockSkins())
     # mc = moreChars()
@@ -53,10 +53,10 @@ if __name__ == "__main__":
     # master.addons.add(userInfo.init("123","0000",120,0))
     # master.addons.add(userData.init(999,999,666,233,101))
 
-    gs = gachaSimulation()
-    gs.addUp("char_340_shwaz","char_350_surtr")
-    gs.addUp("char_107_liskam",
-                        "char_173_slchan",
-                        "char_346_aosta")
-    master.addons.add(gs)
+    # gs = gachaSimulation()
+    # gs.addUp("char_340_shwaz","char_350_surtr")
+    # gs.addUp("char_107_liskam",
+    #                     "char_173_slchan",
+    #                     "char_346_aosta")
+    # master.addons.add(gs)
     master.run()
