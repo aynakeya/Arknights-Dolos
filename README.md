@@ -2,6 +2,7 @@
 
 ## 该项目已停止开发
 
+## Update 该项目被[Rhine-DFramwork](https://github.com/Rhine-Department-0xf/Rhine-DFramwork)整合. 我不会再进行任何更新和开发了.
 
 ## 免责申明
 
